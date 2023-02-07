@@ -31,4 +31,5 @@ public class Receipt {
     public String getAfterDiscount() {
         return afterDiscount;
     }
+
 }

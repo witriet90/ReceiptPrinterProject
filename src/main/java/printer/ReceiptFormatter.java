@@ -25,7 +25,6 @@ public class ReceiptFormatter {
     }
 
     private String printRows(List<ReceiptRow> rows) {
-
         StringBuilder rowsBuilder = new StringBuilder(LINE_SEPARATOR);
         rowsBuilder.append(String.format("| %s |      %s     |   %s  |   %s  |\n",
                 ApplicationStringResources.QUANTITY_TABLE_NAME,

@@ -9,7 +9,6 @@ import java.util.Map;
 
 
 public class PurchaseInputTest {
-    private static final int DISCOUNTIDFORTEST = 34;
 
     PurchaseInput purchaseInput;
 
@@ -44,8 +43,8 @@ public class PurchaseInputTest {
     public void getDiscountIdTest() {
         Map<Integer, Integer> purchaseInputData = new HashMap<>();
 
-        PurchaseInput input = new PurchaseInput(purchaseInputData, DISCOUNTIDFORTEST);
+        PurchaseInput input = new PurchaseInput(purchaseInputData, 34);
 
-        Assertions.assertEquals(DISCOUNTIDFORTEST, input.getDiscountId());
+        Assertions.assertEquals(34, input.getDiscountId());
     }
 }
