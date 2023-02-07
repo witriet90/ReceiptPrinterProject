@@ -4,8 +4,8 @@ import input.InputParser;
 import input.PurchaseInput;
 import model.Discount;
 import model.Product;
+import printer.ReceiptFilePrinter;
 import receipt.Receipt;
-import printer.ReceiptConsolePrinter;
 import receipt.ReceiptBuilder;
 
 import java.util.HashMap;
@@ -25,14 +25,14 @@ public class Program {
         discounts.put(2, new Discount(2, 3, "Egor"));
         discounts.put(3, new Discount(3, 5, "Angela"));
 
-        database = new Database(products, discounts);
+        database = new Database(products,discounts);
     }
 
     public void run(String[] consoleInput) {
         InputParser inputParser = new InputParser();
         PurchaseInput purchaseInput = inputParser.parse(consoleInput);
 
-        ReceiptConsolePrinter printer = new ReceiptConsolePrinter();
+        ReceiptFilePrinter printer = new ReceiptFilePrinter();
         printer.print(buildReceipt(purchaseInput));
     }
 

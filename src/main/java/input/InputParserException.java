@@ -1,6 +1,6 @@
 package input;
 
-public class InputParserException extends RuntimeException{
+public class InputParserException extends RuntimeException {
     public InputParserException() {
     }
 

@@ -4,10 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7b77946-7d49-426b-a255-3817bbddb90c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/test/java/receipt/ReceiptBuilderTest.java" afterDir="false" />
+    <list default="true" id="f7b77946-7d49-426b-a255-3817bbddb90c" name="Changes" comment="add test method.">
+      <change afterPath="$PROJECT_DIR$/main/java/printer/ReceiptFilePrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/java/printer/ReceiptFormatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/java/database/DatabaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/java/database/StorageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/java/input/PurchaseInputBuilderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/java/input/PurchaseInputTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/test/test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/java/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/database/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/java/database/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/input/InputParserException.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/java/input/InputParserException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/input/PurchaseInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/java/input/PurchaseInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/model/Discount.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/java/model/Discount.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/printer/ApplicationStringResources.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/java/printer/ApplicationStringResources.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/java/printer/ReceiptConsolePrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/main/java/printer/ReceiptConsolePrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/java/receipt/ReceiptCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/java/receipt/ReceiptCalculatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +30,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -32,36 +46,106 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/ReceiptPrinter/ReceiptPrinter/src"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/ReceiptPrinter/ReceiptPrinter/src&quot;
   }
-}]]></component>
-  <component name="RunManager">
-    <configuration name="ReceiptBuilderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="input" />
+      <recent name="database" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PurchaseInputBuilderTest.addProductAndDiscountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="receipt.*" />
+          <option name="PATTERN" value="input.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="receipt" />
-      <option name="MAIN_CLASS_NAME" value="receipt.ReceiptBuilderTest" />
+      <option name="PACKAGE_NAME" value="input" />
+      <option name="MAIN_CLASS_NAME" value="input.PurchaseInputBuilderTest" />
+      <option name="METHOD_NAME" value="addProductAndDiscountTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PurchaseInputTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="input.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="input" />
+      <option name="MAIN_CLASS_NAME" value="input.PurchaseInputTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PurchaseInputTest.getDiscountIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="input.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="input" />
+      <option name="MAIN_CLASS_NAME" value="input.PurchaseInputTest" />
+      <option name="METHOD_NAME" value="getDiscountIdTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PurchaseInputTest.getProductsWhenThereIsNoInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="input.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="input" />
+      <option name="MAIN_CLASS_NAME" value="input.PurchaseInputTest" />
+      <option name="METHOD_NAME" value="getProductsWhenThereIsNoInput" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ReceiptBuilderTest" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.PurchaseInputBuilderTest.addProductAndDiscountTest" />
+        <item itemvalue="JUnit.PurchaseInputTest" />
+        <item itemvalue="JUnit.PurchaseInputTest.getProductsWhenThereIsNoInput" />
+        <item itemvalue="JUnit.PurchaseInputTest.getDiscountIdTest" />
       </list>
     </recent_temporary>
   </component>
@@ -75,6 +159,18 @@
       <updated>1675201461164</updated>
       <workItem from="1675201742347" duration="25000" />
     </task>
+    <task id="LOCAL-00001" summary="add test method.">
+      <created>1675370328017</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675370328017</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add test method." />
+    <option name="LAST_COMMIT_MESSAGE" value="add test method." />
   </component>
 </project>

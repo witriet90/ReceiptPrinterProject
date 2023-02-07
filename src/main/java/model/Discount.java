@@ -1,5 +1,7 @@
 package model;
 
+import java.util.Objects;
+
 public class Discount {
     private final int id;
     private final int value;
@@ -21,5 +23,18 @@ public class Discount {
 
     public String getOwner() {
         return owner;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Discount discount = (Discount) o;
+        return id == discount.id && value == discount.value && Objects.equals(owner, discount.owner);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, value, owner);
     }
 }
