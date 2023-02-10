@@ -1,5 +1,6 @@
 package input;
 
+
 public class InputParser {
 
     private PurchaseInputBuilder inputBuilder;

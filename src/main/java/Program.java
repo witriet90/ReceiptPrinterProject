@@ -1,6 +1,8 @@
 import database.DataBaseException;
 import database.Database;
+import input.ConsoleInputParser;
 import input.InputParser;
+import input.InputParserException;
 import input.PurchaseInput;
 import model.Discount;
 import model.Product;
@@ -8,6 +10,7 @@ import printer.ReceiptFilePrinter;
 import receipt.Receipt;
 import receipt.ReceiptBuilder;
 
+import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -25,15 +28,19 @@ public class Program {
         discounts.put(2, new Discount(2, 3, "Egor"));
         discounts.put(3, new Discount(3, 5, "Angela"));
 
-        database = new Database(products,discounts);
+        database = new Database(products, discounts);
     }
 
     public void run(String[] consoleInput) {
-        InputParser inputParser = new InputParser();
-        PurchaseInput purchaseInput = inputParser.parse(consoleInput);
+        ConsoleInputParser parser = new ConsoleInputParser();
+        try {
+            PurchaseInput purchaseInput = parser.parse(consoleInput);
+            ReceiptFilePrinter printer = new ReceiptFilePrinter();
+            printer.print(buildReceipt(purchaseInput));
+        } catch (InputParserException e) {
+            System.out.println(e.getMessage());
+        }
 
-        ReceiptFilePrinter printer = new ReceiptFilePrinter();
-        printer.print(buildReceipt(purchaseInput));
     }
 
     private Receipt buildReceipt(PurchaseInput input) {
